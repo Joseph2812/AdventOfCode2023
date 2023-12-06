@@ -1,7 +1,7 @@
 #include "../../../include/solutions/day1/WordMap.hpp"
 
 namespace solutions {
-	WordMap::WordMap(const char **words, const char *results, int count) {
+	WordMap::WordMap(const char **words, const char *results, const int count) {
 		setToRoot();
 
 		for (int i = 0; i < count; i++) {
@@ -17,7 +17,7 @@ namespace solutions {
 		}	
 	}
 
-	bool WordMap::addNextChar(char c, bool &success, char &result) {
+	bool WordMap::addNextChar(const char c, bool &success, char &result) {
 		success = false;
 		
 		if ((*_currentLayer).CharToLayer.contains(c)) {

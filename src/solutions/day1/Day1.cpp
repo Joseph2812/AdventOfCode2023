@@ -17,7 +17,7 @@ namespace solutions {
 		std::cout << "Part 2: " << run(fStream, wordMap, true) << std::endl;
 	}
 
-	int Day1::run(std::ifstream &fStream, WordMap &wordMap, bool part2) {
+	int Day1::run(std::ifstream &fStream, WordMap &wordMap, const bool part2) {
 		int total = 0;
 		std::string line;
 
@@ -69,5 +69,5 @@ namespace solutions {
 		return total;
 	}
 
-	bool Day1::isNumber(char c) { return c >= '0' && c <= '9'; }
+	bool Day1::isNumber(const char c) { return c >= '0' && c <= '9'; }
 }

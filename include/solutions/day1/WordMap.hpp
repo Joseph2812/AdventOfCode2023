@@ -15,8 +15,8 @@ namespace solutions {
 		MapLayer* _currentLayer;
 
 	public:
-		WordMap(const char **words, const char *results, int count);
-		bool addNextChar(char c, bool &success, char &result); // Returns: Whether char c matches
+		WordMap(const char **words, const char *results, const int count);
+		bool addNextChar(const char c, bool &success, char &result); // Returns: Whether char c matches
 		void setToRoot(); // This will also be automatically called internally when a word is found, or letter doesn't fit a sequence.
 	};
 }

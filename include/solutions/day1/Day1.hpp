@@ -13,7 +13,7 @@ namespace solutions {
 		void print();
 
 	private:
-		int run(std::ifstream &fStream, WordMap &wordMap, bool part2);
-		bool isNumber(char c);
+		int run(std::ifstream &fStream, WordMap &wordMap, const bool part2);
+		bool isNumber(const char c);
 	};
 }

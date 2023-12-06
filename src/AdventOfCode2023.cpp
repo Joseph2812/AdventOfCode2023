@@ -3,6 +3,6 @@
 using namespace std;
 
 int main() {
-	solutions::Day1().print();
+	solutions::Day2().print();
 	return 0;
 }
