@@ -56,8 +56,7 @@ namespace solutions {
 							rootIdx = i;
 						}
 					}
-					else if (!canUpdateRootIdx)
-					{
+					else if (!canUpdateRootIdx) {
 						canUpdateRootIdx = true;
 						i = rootIdx;
 					}
